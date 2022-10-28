@@ -11,11 +11,22 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule }from '@angular/common/http';
+import { AdminComponent } from './admin/admin.component';
+import { Routes } from '@angular/router';
 
+const link:Routes=[
+  {
+    path:"",component:LoginComponent
+  },
+  {
+    path:"admindashboard",component:AdminComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
