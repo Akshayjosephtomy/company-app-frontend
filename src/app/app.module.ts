@@ -16,6 +16,8 @@ import { AdminComponent } from './admin/admin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { TestingComponent } from './testing/testing.component';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 
 const link:Routes=[
   {
@@ -23,6 +25,9 @@ const link:Routes=[
   },
   {
     path:"addemployee",component:AdminComponent
+  },
+  {
+    path:"testcase",component:TestingComponent
   }
 ]
 @NgModule({
@@ -30,7 +35,9 @@ const link:Routes=[
     AppComponent,
     LoginComponent,
     AdminComponent,
-    AdminnavbarComponent
+    AdminnavbarComponent,
+    TestingComponent,
+    ViewemployeeComponent
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,8 @@ export class ApiService {
   signinSec=(data:any)=>{
     return this.http.post("http://localhost:8080/signinsecurity",data)
   }
+
+  addUser=(data:any)=>{
+    return this.http.post("http://localhost:8080/addemployee",data)
+  }
 }
