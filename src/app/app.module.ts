@@ -18,6 +18,14 @@ import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { TestingComponent } from './testing/testing.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import {MatTableModule} from '@angular/material/table';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
+import { ViewleaveComponent } from './viewleave/viewleave.component';
+import { ViewlogsComponent } from './viewlogs/viewlogs.component';
+import {MatSelectModule} from '@angular/material/select';
 
 const link:Routes=[
   {
@@ -28,6 +36,27 @@ const link:Routes=[
   },
   {
     path:"testcase",component:TestingComponent
+  },
+  {
+    path:"viewemployee",component:ViewemployeeComponent
+  },
+  {
+    path:"searchemployee",component:SearchemployeeComponent
+  },
+  {
+    path:"addsecurity",component:AddsecurityComponent
+  },
+  {
+    path:"viewsecurity",component:ViewsecurityComponent
+  },
+  {
+    path:"searchsecurity",component:SearchsecurityComponent
+  },
+  {
+    path:"leaverequests",component:ViewleaveComponent
+  },
+  {
+    path:"viewlogs",component:ViewlogsComponent
   }
 ]
 @NgModule({
@@ -37,7 +66,13 @@ const link:Routes=[
     AdminComponent,
     AdminnavbarComponent,
     TestingComponent,
-    ViewemployeeComponent
+    ViewemployeeComponent,
+    SearchemployeeComponent,
+    AddsecurityComponent,
+    ViewsecurityComponent,
+    SearchsecurityComponent,
+    ViewleaveComponent,
+    ViewlogsComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +86,9 @@ const link:Routes=[
     HttpClientModule,
     RouterModule.forRoot(link),
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
