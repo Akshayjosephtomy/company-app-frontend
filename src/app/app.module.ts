@@ -35,6 +35,7 @@ import { SecuritydashComponent } from './securitydash/securitydash.component';
 import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
 import { CheckinComponent } from './checkin/checkin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginnavbarComponent } from './loginnavbar/loginnavbar.component';
 
 const link:Routes=[
   {
@@ -111,7 +112,8 @@ const link:Routes=[
     SecuritydashComponent,
     SecuritynavbarComponent,
     CheckinComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    LoginnavbarComponent
   ],
   imports: [
     BrowserModule,
