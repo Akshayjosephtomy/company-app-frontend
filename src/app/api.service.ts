@@ -52,7 +52,7 @@ export class ApiService {
     return this.http.post("http://localhost:8080/leavestatus",data)
   }
   viewLog=()=>{
-    return this.http.get("http://localhost:8080/viewlog")
+    return this.http.get("http://localhost:8080/viewalllog")
   }
   applyLeave=(data:any)=>{
     return this.http.post("http://localhost:8080/applyleave",data)
@@ -62,5 +62,14 @@ export class ApiService {
   }
   viewLogById=(data:any)=>{
     return this.http.post("http://localhost:8080/viewmylog",data)
+  }
+  checkIn=(data:any)=>{
+    return this.http.post("http://localhost:8080/login",data)
+  }
+  checkOut=(data:any)=>{
+    return this.http.post("http://localhost:8080/logout",data)
+  }
+  viewCheckIn=()=>{
+    return this.http.get("http://localhost:8080/viewlogin")
   }
 }

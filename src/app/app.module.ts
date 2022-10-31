@@ -31,6 +31,10 @@ import { EmployeenavbarComponent } from './employeenavbar/employeenavbar.compone
 import { ApplyleaveComponent } from './applyleave/applyleave.component';
 import { MyleaveComponent } from './myleave/myleave.component';
 import { MylogsComponent } from './mylogs/mylogs.component';
+import { SecuritydashComponent } from './securitydash/securitydash.component';
+import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
+import { CheckinComponent } from './checkin/checkin.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const link:Routes=[
   {
@@ -74,6 +78,15 @@ const link:Routes=[
   },
   {
     path:"mylogs",component:MylogsComponent
+  },
+  {
+    path:"securitydash",component:SecuritydashComponent
+  },
+  {
+    path:"checkin",component:CheckinComponent
+  },
+  {
+    path:"checkout",component:CheckoutComponent
   }
 ]
 @NgModule({
@@ -94,7 +107,11 @@ const link:Routes=[
     EmployeenavbarComponent,
     ApplyleaveComponent,
     MyleaveComponent,
-    MylogsComponent
+    MylogsComponent,
+    SecuritydashComponent,
+    SecuritynavbarComponent,
+    CheckinComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
