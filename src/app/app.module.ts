@@ -26,6 +26,11 @@ import { SearchsecurityComponent } from './searchsecurity/searchsecurity.compone
 import { ViewleaveComponent } from './viewleave/viewleave.component';
 import { ViewlogsComponent } from './viewlogs/viewlogs.component';
 import {MatSelectModule} from '@angular/material/select';
+import { EmployeedashComponent } from './employeedash/employeedash.component';
+import { EmployeenavbarComponent } from './employeenavbar/employeenavbar.component';
+import { ApplyleaveComponent } from './applyleave/applyleave.component';
+import { MyleaveComponent } from './myleave/myleave.component';
+import { MylogsComponent } from './mylogs/mylogs.component';
 
 const link:Routes=[
   {
@@ -57,6 +62,18 @@ const link:Routes=[
   },
   {
     path:"viewlogs",component:ViewlogsComponent
+  },
+  {
+    path:"employeedash",component:EmployeedashComponent
+  },
+  {
+    path:"applyleave",component:ApplyleaveComponent
+  },
+  {
+    path:"myleave",component:MyleaveComponent
+  },
+  {
+    path:"mylogs",component:MylogsComponent
   }
 ]
 @NgModule({
@@ -72,7 +89,12 @@ const link:Routes=[
     ViewsecurityComponent,
     SearchsecurityComponent,
     ViewleaveComponent,
-    ViewlogsComponent
+    ViewlogsComponent,
+    EmployeedashComponent,
+    EmployeenavbarComponent,
+    ApplyleaveComponent,
+    MyleaveComponent,
+    MylogsComponent
   ],
   imports: [
     BrowserModule,

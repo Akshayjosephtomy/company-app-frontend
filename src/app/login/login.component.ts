@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       (response:any)=>{
         if (response.length>0) {
           localStorage.setItem("emp_code",response[0].emp_code)
-          this.myrouter.navigate(["/employeedashboard"])
+          this.myrouter.navigate(["/employeedash"])
           alert("login success")
         } else {
           alert("Invalid Credentials")
