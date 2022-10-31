@@ -1,0 +1,21 @@
+<mat-toolbar color="accent">
+    <span>Company App   .</span>
+
+    <div class="example-button-container">
+        <button mat-fab color="blank" aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+
+      <div>
+        <a mat-button routerLink="/employeedash">Employee Dashboard</a>
+        <a mat-button routerLink="/applyleave">Apply leave</a>
+        <a mat-button routerLink="/myleave">Leave status</a>
+        <a mat-button routerLink="/mylogs">view logs</a>
+        
+      </div>
+      <div class="spacer"></div>
+        <a mat-raised-button  color="primary" (click)="logout()">Logout</a>
+      
+      
+  </mat-toolbar>
