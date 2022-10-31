@@ -1,0 +1,42 @@
+<app-employeenavbar></app-employeenavbar>
+<div class="div-center my-15">
+    <mat-card class="example-card">
+      <mat-card-content >
+          <h1>My Logs</h1>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" *ngIf="dataSource.length > 0">
+  
+          <!-- Employee Name -->
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> Log ID </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+          <!-- CheckIn Time -->
+          <ng-container matColumnDef="login">
+            <th mat-header-cell *matHeaderCellDef> LogIn Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.login}} </td>
+          </ng-container>
+          <!-- CheckIn Securtiy Name -->
+          <ng-container matColumnDef="login_s_name">
+            <th mat-header-cell *matHeaderCellDef> LogIn Securtiy Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.login_s_name}} </td>
+          </ng-container>
+          <!-- CheckOut Time -->
+              <ng-container matColumnDef="logout">
+            <th mat-header-cell *matHeaderCellDef> LogOut Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.logout}} </td>
+          </ng-container>
+          <!-- Checkout Security Name -->
+          <ng-container matColumnDef="logout_s_name">
+            <th mat-header-cell *matHeaderCellDef> LogOut Security Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.logout_s_name}} </td>
+          </ng-container>
+          
+                  
+  
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </div>
