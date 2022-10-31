@@ -31,6 +31,7 @@ import { EmployeenavbarComponent } from './employeenavbar/employeenavbar.compone
 import { ApplyleaveComponent } from './applyleave/applyleave.component';
 import { MyleaveComponent } from './myleave/myleave.component';
 import { MylogsComponent } from './mylogs/mylogs.component';
+import { LoginnavbarComponent } from './loginnavbar/loginnavbar.component';
 
 const link:Routes=[
   {
@@ -94,7 +95,8 @@ const link:Routes=[
     EmployeenavbarComponent,
     ApplyleaveComponent,
     MyleaveComponent,
-    MylogsComponent
+    MylogsComponent,
+    LoginnavbarComponent
   ],
   imports: [
     BrowserModule,
